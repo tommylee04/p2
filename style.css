@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FAD41B;
+    font-size: 20px;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1{
+    margin-left: 5%;
+    width: 90%;
+    color: #fff;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 5%;
+    font-weight: 700;
+    margin-top: 5%;
+}
+
+h2{
+    margin-left: 15%;
+    width: 90%;
+    color: #fff;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 5%;
+    font-weight: 700;
+    margin-top: 5%;
+}
+
+h3{
+    margin-left: 5%;
+    width: 90%;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+h4{
+    margin-left: 5%;
+    width: 90%;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.searchbutton {
+    margin-left: 92%;
+    position: absolute;
+    margin-top: -8.5%;
+}
+
+.container {
+    position: relative;
+    color: white;
+}
+
+.overtext {
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    font-size: 72px;
+    font-weight: bold;
+    left: 250px;
+    top: 200px;
+}
+
+.overtext2 {
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    font-size: 72px;
+    font-weight: bold;
+    left: 220px;
+    top: 465px;
+}
+
+.overtext3 {
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    font-size: 72px;
+    font-weight: bold;
+    left: 110px;
+    top: 720px;
+}
+
+.foodpics {
+    height: 260px;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    object-fit: cover;
+    animation-name: fade;
+    transition-duration: 1.5s;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 15px;
+    height: 95%;
+}
+
+    .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    &nth-child(1) {
+    grid-column: 1/2;
+}
+
+    &nth-child(2) {
+    grid-column: 2/2;
+}
+
+    &nth-child(3) {
+    grid-column: 3/4;
+    grid-row: 1/3;
+
+}
+
+    &nth-child(4) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+}
+
+.iconarrow {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+
+.iconarrow:before{
+    content:"";
+    display: inline-block;
+    border-radius: 4px;
+    width: 16px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    bottom: -5px;
+}
+
+.iconarrow:after{
+    content:"";
+    display: inline-block;
+    border-radius: 4px;
+    width: 16px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 11px;
+    bottom: 5px;
+}
+
+.foodpics:hover{
+    opacity: 70%;
+}
+
+@keyframes fade {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
